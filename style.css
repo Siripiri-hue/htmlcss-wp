@@ -8,7 +8,7 @@
 /* centratura generale */
 header, section, footer {
     max-width: 1200px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
 }
 
 header {
@@ -27,10 +27,11 @@ img.logo {
 /* menu */
 nav > ul.menu-nav > li {
     list-style: none;
-    padding: 7px;
+    padding: 7px 7px 30px;
     float: left;
     text-transform: uppercase;
     font-size: 15px;
+    color: #6e6e6e;
 }
 
 nav > ul.menu-nav > li:first-child {
@@ -65,23 +66,20 @@ div.jumbo > div.caption {
     z-index: 2;
 }
 
-.overlay::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    background-color: black;
-    opacity: 0.2;
-}
-
-
-
+/* sezione contenuti */
 .title {
     min-height: 100px;
     margin-bottom: 10px;
+    padding: 20px 0 20px;
+}
+
+div.main-content > div.title > h1 {
+    font-size: 40px;
+}
+
+div.main-content > div.title > h6 {
+    font-size: 18px;
+    color: #6e6e6e;
 }
 
 .col, .content {
@@ -99,14 +97,28 @@ div.jumbo > div.caption {
     margin: 0 10px 10px;
 }
 
+footer {
+    min-height: 100px;
+}
+
+/* classi riutilizzate/riutilizzabili*/
+
+.overlay::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: black;
+    opacity: 0.2;
+}
+
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
-}
-
-footer {
-    min-height: 100px;
 }
 
 /* debug */
@@ -123,13 +135,14 @@ section.jumbo.debug {
     background-color: rgb(250, 177, 109);
 }
 
-section.main-content.debug {
+section.debug > div.main-content {
     background-color: steelblue;
 }
 
-section > div.debug {
-    background-color: rgb(118, 193, 255);
+section.debug > div.main-content > div.title, div.col, div.content {
+    background-color: tomato;
 }
+
 
 
 
