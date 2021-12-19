@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* centratura generale */
 header, section, footer {
     max-width: 1200px;
@@ -14,6 +15,7 @@ header {
     min-height: 70px;
 }
 
+/* logo */
 div.logo-container {
     line-height: 70px;
 }
@@ -22,6 +24,7 @@ img.logo {
     height: 70px;
 }
 
+/* menu */
 nav > ul.menu-nav > li {
     list-style: none;
     padding: 7px;
@@ -41,9 +44,40 @@ a {
 
 /* main */ 
 
-section {
-    min-height: 400px;
+/* sezione jumbo */
+div.jumbo {
+    background-image: url("img/banner.jpg");
+    /* object-fit: cover; */
+    /* object-position: top center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;   
+    position: relative;
 }
+
+div.jumbo > div.caption {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    max-width: 50%;
+    color: white;
+    z-index: 2;
+}
+
+.overlay::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: black;
+    opacity: 0.2;
+}
+
+
 
 .title {
     min-height: 100px;
@@ -85,11 +119,11 @@ footer.debug {
     background-color: rgb(162, 0, 255);
 }
 
-section.top_sec.debug {
+section.jumbo.debug {
     background-color: rgb(250, 177, 109);
 }
 
-section.bottom_sec.debug {
+section.main-content.debug {
     background-color: steelblue;
 }
 
