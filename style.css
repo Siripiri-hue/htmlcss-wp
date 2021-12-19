@@ -82,12 +82,12 @@ div.main-content > div.title > h6 {
     color: #6e6e6e;
 }
 
-.col, .content {
+.sidebar, .content {
     float: left;
     min-height: 500px;
 }
 
-.col {
+.sidebar {
     width: 250px;
     margin-bottom: 10px;
 }
@@ -139,7 +139,7 @@ section.debug > div.main-content {
     background-color: steelblue;
 }
 
-section.debug > div.main-content > div.title, div.col, div.content {
+section.debug > div.main-content > div.title, div.sidebar, div.content {
     background-color: tomato;
 }
 
