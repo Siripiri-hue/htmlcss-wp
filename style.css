@@ -4,22 +4,45 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* centratura generale */
+header, section, footer {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
 
 header {
-    min-height: 150px;
+    min-height: 70px;
 }
+
+div.logo-container {
+    line-height: 70px;
+}
+
+img.logo {
+    height: 70px;
+}
+
+nav > ul.menu-nav > li {
+    list-style: none;
+    padding: 7px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav > ul.menu-nav > li:first-child {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* main */ 
 
 section {
     min-height: 400px;
-    max-width: 1200px;
-}
-
-footer {
-    min-height: 100px;
-}
-
-header, section {
-    margin: 0 auto 20px;
 }
 
 .title {
@@ -46,6 +69,10 @@ header, section {
     content: "";
     display: block;
     clear: both;
+}
+
+footer {
+    min-height: 100px;
 }
 
 /* debug */
