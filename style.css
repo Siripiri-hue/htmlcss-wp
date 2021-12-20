@@ -6,16 +6,20 @@
 }
 
 /* centratura generale */
+
 header, section, footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+    /* HEADER */
 
 header {
     min-height: 70px;
 }
 
 /* logo */
+
 div.logo-container {
     line-height: 70px;
 }
@@ -25,6 +29,7 @@ img.logo {
 }
 
 /* menu */
+
 nav > ul.menu-nav > li {
     list-style: none;
     padding: 7px 7px 30px;
@@ -44,8 +49,8 @@ a {
 }
 
 /* main */ 
-
 /* sezione jumbo */
+
 div.jumbo {
     background-image: url("img/banner.jpg");
     /* object-fit: cover; */
@@ -55,6 +60,8 @@ div.jumbo {
     background-position: center center;
     min-height: 500px;   
     position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 div.jumbo > div.caption {
@@ -67,14 +74,15 @@ div.jumbo > div.caption {
 }
 
 /* sezione contenuti */
-.title {
+
+div.main-content > .title {
     min-height: 100px;
     margin-bottom: 10px;
     padding: 20px 0 20px;
 }
 
-div.main-content > div.title > h1 {
-    font-size: 40px;
+div.main-content > div.title > h2 {
+    font-size: 30px;
 }
 
 div.main-content > div.title > h6 {
@@ -82,23 +90,70 @@ div.main-content > div.title > h6 {
     color: #6e6e6e;
 }
 
-.sidebar, .content {
+.sidebar, #content {
     float: left;
     min-height: 500px;
 }
 
-.sidebar {
-    width: 250px;
+div.main-content > div.sidebar {
+    width: 20%;
     margin-bottom: 10px;
 }
 
-.content {
-    width: calc(100% - 250px - 250px - 20px);
+div.main-content > div#content {
+    width: calc(100% - 20% - 20% - 20px);
     margin: 0 10px 10px;
 }
 
-footer {
-    min-height: 100px;
+div.main-content > div.sidebar > div.img, div#content > div.img {
+    min-height: 200px;
+    max-width: 100%;
+    background-color: aqua;
+    position: relative;
+}
+
+div.main-content > div#left > .img, div#right > .img , div#content > .img {
+    /* object-fit: cover; */
+    /* object-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+div.main-content > div.sidebar#left > .img {
+    background-image: url("img/img-1.jpg");
+    background-position: center center;
+}
+
+div.main-content > div#content > .img {
+    background-image: url("img/banner-2.jpg");
+    background-position: center center;
+}
+
+div.main-content > div.sidebar#right > .img {
+    background-image: url("img/img-3.jpg");
+    background-position: bottom center;
+}
+
+div.main-content > div.sidebar > div.card-info, div#content > div.card-info {
+    padding: 20px;
+}
+
+div.main-content > div.sidebar > div.card-info > h3, div#content > div.card-info > h3 {
+    line-height: 50px;
+}
+/* footer */
+
+footer > div.foot {
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer > div.foot > span#heart {
+    color: red;
+    font-size: 25px;
 }
 
 /* classi riutilizzate/riutilizzabili*/
@@ -123,25 +178,26 @@ footer {
 
 /* debug */
 
-header.debug {
-    background-color: rgb(255, 253, 115);
+.debug header {
+    background-color: rgb(205, 203, 115);
 }
 
-footer.debug {
-    background-color: rgb(162, 0, 255);
+.debug footer {
+    background-color: rgb(162, 0, 205);
 }
 
-section.jumbo.debug {
-    background-color: rgb(250, 177, 109);
+.debug section.jumbo {
+    background-color: rgb(200, 177, 109);
 }
 
-section.debug > div.main-content {
+.debug div.main-content {
     background-color: steelblue;
 }
 
-section.debug > div.main-content > div.title, div.sidebar, div.content {
+.debug div.main-content /* > div.title, div.sidebar, div#content */ {
     background-color: tomato;
 }
+
 
 
 
