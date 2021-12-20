@@ -50,7 +50,7 @@ a {
     color: currentColor;
 }
 
-/* main */ 
+    /*  MAIN */ 
 /* sezione jumbo */
 
 div.jumbo {
@@ -110,7 +110,6 @@ div.main-content > div#content {
 div.main-content > div.sidebar > div.img, div#content > div.img {
     min-height: 200px;
     max-width: 100%;
-    background-color: aqua;
     position: relative;
 }
 
@@ -138,6 +137,20 @@ div.main-content > div.sidebar#right > .img {
     background-position: bottom center;
 }
 
+/* hover */
+div.main-content > div.sidebar#left > div.img:hover {
+    background-image: url("img/img-4.jpg");
+}
+
+div.main-content > div.sidebar#right > div.img:hover {
+    background-image: url("img/img-6.jpg");
+}
+
+div.main-content > div#content > div.img:hover {
+    background-image: url("img/img-5.jpg");
+    background-size: contain;
+}
+
 div.main-content > div.sidebar > div.card-info, div#content > div.card-info {
     padding-top: 20px;
 }
@@ -150,7 +163,7 @@ div.main-content > div.sidebar > div.card-info p, div#content > div.card-info p 
     color: #9c9c9c;
 }
 
-/* footer */
+    /* FOOTER */
 
 footer > div.foot {
     line-height: 60px;
