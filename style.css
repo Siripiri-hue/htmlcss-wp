@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 /* centratura generale */
@@ -75,24 +77,24 @@ div.jumbo > div.caption {
 
 /* sezione contenuti */
 
-div.main-content > .title {
+div.main-content > #title {
     min-height: 100px;
     margin-bottom: 10px;
     padding: 20px 0 20px;
 }
 
-div.main-content > div.title > h2 {
+div.main-content > div#title > h2 {
     font-size: 30px;
 }
 
-div.main-content > div.title > h6 {
+div.main-content > div#title > h6 {
     font-size: 18px;
     color: #6e6e6e;
 }
 
 .sidebar, #content {
     float: left;
-    min-height: 500px;
+    min-height: 200px;
 }
 
 div.main-content > div.sidebar {
@@ -137,12 +139,17 @@ div.main-content > div.sidebar#right > .img {
 }
 
 div.main-content > div.sidebar > div.card-info, div#content > div.card-info {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 div.main-content > div.sidebar > div.card-info > h3, div#content > div.card-info > h3 {
-    line-height: 50px;
+    padding-bottom: 10px;
 }
+
+div.main-content > div.sidebar > div.card-info p, div#content > div.card-info p {
+    color: #9c9c9c;
+}
+
 /* footer */
 
 footer > div.foot {
@@ -194,11 +201,14 @@ footer > div.foot > span#heart {
     background-color: steelblue;
 }
 
-.debug div.main-content /* > div.title, div.sidebar, div#content */ {
+.debug div.main-content > div.sidebar {
     background-color: tomato;
 }
 
+.debug div.main-content > div#title {
+    background-color: rgb(221, 235, 96);
+}
 
-
-
-
+.debug div.main-content > div#content {
+    background-color: orangered;
+}
